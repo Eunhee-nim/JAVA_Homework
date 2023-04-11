@@ -1,0 +1,12 @@
+class Solution {
+    public long solution(long n) {
+       long sqr = (long) (Math.ceil(Math.sqrt(n))); //실수를 단순 형변환하게 되면 오류가 나와서 정수 값을 반환하는 Math 메소드 사용
+        
+        if (n/sqr == sqr){
+            return (sqr+1)*(sqr+1); // 특정 x의 제곱근일 경우 x+1의 제곱근의 반환
+        } 
+        
+        return -1; //아닐경우  -1 반환 
+
+    }
+}
